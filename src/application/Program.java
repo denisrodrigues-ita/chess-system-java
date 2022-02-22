@@ -1,18 +1,12 @@
 package application;
 
 import boardgame.Position;
-<<<<<<< HEAD
 import chess.ChessException;
-=======
->>>>>>> fe53307246fe163666894f3e7fc3961012bcebcf
 import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
 
-<<<<<<< HEAD
 import java.util.InputMismatchException;
-=======
->>>>>>> fe53307246fe163666894f3e7fc3961012bcebcf
 import java.util.Scanner;
 
 public class Program {
@@ -24,7 +18,6 @@ public class Program {
         ChessMatch chessMatch = new ChessMatch();
 
         while (true) {
-<<<<<<< HEAD
             try {
                 UI.clearScreen();
                 UI.printBoard(chessMatch.getPieces());
@@ -46,7 +39,6 @@ public class Program {
                 System.out.println(e.getMessage());
                 sc.nextLine();
             }
-=======
             UI.printBoard(chessMatch.getPieces());
             System.out.println();
             System.out.print("Source: ");
@@ -57,7 +49,6 @@ public class Program {
             ChessPosition target = UI.readChessPosition(sc);
 
             ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
->>>>>>> fe53307246fe163666894f3e7fc3961012bcebcf
         }
 
     }
